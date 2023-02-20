@@ -11,5 +11,8 @@
     <Setting Name="共阴" Type="System.String" Scope="User">
       <Value Profile="(Default)">共阴</Value>
     </Setting>
+    <Setting Name="confirm" Type="System.String" Scope="User">
+      <Value Profile="(Default)">确认</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
