@@ -237,46 +237,72 @@ namespace DigitalTubeTool
         private void confirm_Click(object sender, EventArgs e)
         {
             string segname = "";
+            string segcode = "0x";
+            uint num1 = 0;
+            uint num2 = 0;
             int index = -1;
             segname = this.segname1.Text.ToLower();
             if (segname == "dp") segname = "h";
             index = (int)segname[0] - 97;
             this.segvalue1.Text = this.pin_value_arr[index].ToString();
+            num1 += this.pin_value_arr[index] << 3;
+  
 
             segname = this.segname2.Text.ToLower();
             if (segname == "dp") segname = "h";
             index = (int)segname[0] - 97;
             this.segvalue2.Text = this.pin_value_arr[index].ToString();
+            num1 += this.pin_value_arr[index] << 2;
 
             segname = this.segname3.Text.ToLower();
             if (segname == "dp") segname = "h";
             index = (int)segname[0] - 97;
             this.segvalue3.Text = this.pin_value_arr[index].ToString();
+            num1 += this.pin_value_arr[index] << 1;
 
             segname = this.segname4.Text.ToLower();
             if (segname == "dp") segname = "h";
             index = (int)segname[0] - 97;
             this.segvalue4.Text = this.pin_value_arr[index].ToString();
+            num1 += this.pin_value_arr[index];
 
             segname = this.segname5.Text.ToLower();
             if (segname == "dp") segname = "h";
             index = (int)segname[0] - 97;
             this.segvalue5.Text = this.pin_value_arr[index].ToString();
+            num2 += this.pin_value_arr[index] << 3;
 
             segname = this.segname6.Text.ToLower();
             if (segname == "dp") segname = "h";
             index = (int)segname[0] - 97;
             this.segvalue6.Text = this.pin_value_arr[index].ToString();
+            num2 += this.pin_value_arr[index] << 2;
 
             segname = this.segname7.Text.ToLower();
             if (segname == "dp") segname = "h";
             index = (int)segname[0] - 97;
             this.segvalue7.Text = this.pin_value_arr[index].ToString();
+            num2 += this.pin_value_arr[index] << 1;
 
             segname = this.segname8.Text.ToLower();
             if (segname == "dp") segname = "h";
             index = (int)segname[0] - 97;
             this.segvalue8.Text = this.pin_value_arr[index].ToString();
+            num2 += this.pin_value_arr[index];
+
+            if(num1<10) segcode = segcode + num1.ToString();
+            else segcode = segcode + (char)((num1 - 10) + 97);
+
+            if (num2 < 10) segcode = segcode + num2.ToString();
+            else segcode = segcode + (char)((num2 - 10) + 97);
+
+            this.codevalue.Text= segcode;
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.savebox.AppendText(this.codevalue.Text + "\r\n");
         }
     }
 }

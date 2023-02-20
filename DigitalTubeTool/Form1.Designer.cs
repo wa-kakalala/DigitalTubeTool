@@ -35,6 +35,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -70,7 +71,7 @@
             this.segvalue2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.confirm = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.savebox = new System.Windows.Forms.TextBox();
             this.codevalue = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
@@ -191,7 +192,7 @@
             this.segname1.Name = "segname1";
             this.segname1.Size = new System.Drawing.Size(21, 21);
             this.segname1.TabIndex = 13;
-            this.segname1.Text = "a";
+            this.segname1.Text = "dp";
             this.segname1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.segname1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -250,7 +251,7 @@
             this.segname8.Name = "segname8";
             this.segname8.Size = new System.Drawing.Size(21, 21);
             this.segname8.TabIndex = 13;
-            this.segname8.Text = "dp";
+            this.segname8.Text = "a";
             this.segname8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // segvalue8
@@ -280,7 +281,7 @@
             this.segname7.Name = "segname7";
             this.segname7.Size = new System.Drawing.Size(21, 21);
             this.segname7.TabIndex = 13;
-            this.segname7.Text = "g";
+            this.segname7.Text = "b";
             this.segname7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // segvalue7
@@ -310,7 +311,7 @@
             this.segname6.Name = "segname6";
             this.segname6.Size = new System.Drawing.Size(21, 21);
             this.segname6.TabIndex = 13;
-            this.segname6.Text = "f";
+            this.segname6.Text = "c";
             this.segname6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // segvalue6
@@ -340,7 +341,7 @@
             this.segname5.Name = "segname5";
             this.segname5.Size = new System.Drawing.Size(21, 21);
             this.segname5.TabIndex = 13;
-            this.segname5.Text = "e";
+            this.segname5.Text = "d";
             this.segname5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // segvalue5
@@ -370,7 +371,7 @@
             this.segname4.Name = "segname4";
             this.segname4.Size = new System.Drawing.Size(21, 21);
             this.segname4.TabIndex = 13;
-            this.segname4.Text = "d";
+            this.segname4.Text = "e";
             this.segname4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // segvalue4
@@ -400,7 +401,7 @@
             this.segname3.Name = "segname3";
             this.segname3.Size = new System.Drawing.Size(21, 21);
             this.segname3.TabIndex = 13;
-            this.segname3.Text = "c";
+            this.segname3.Text = "f";
             this.segname3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // segvalue3
@@ -430,7 +431,7 @@
             this.segname2.Name = "segname2";
             this.segname2.Size = new System.Drawing.Size(21, 21);
             this.segname2.TabIndex = 13;
-            this.segname2.Text = "b";
+            this.segname2.Text = "g";
             this.segname2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // segvalue2
@@ -468,14 +469,15 @@
             this.confirm.UseVisualStyleBackColor = false;
             this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
-            // textBox9
+            // savebox
             // 
-            this.textBox9.Location = new System.Drawing.Point(413, 193);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(75, 106);
-            this.textBox9.TabIndex = 33;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.savebox.Location = new System.Drawing.Point(413, 193);
+            this.savebox.Multiline = true;
+            this.savebox.Name = "savebox";
+            this.savebox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.savebox.Size = new System.Drawing.Size(75, 106);
+            this.savebox.TabIndex = 33;
+            this.savebox.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // codevalue
             // 
@@ -506,6 +508,7 @@
             this.button10.TabIndex = 36;
             this.button10.Text = "记录";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label11
             // 
@@ -664,7 +667,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.panel11);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.savebox);
             this.Controls.Add(this.confirm);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
@@ -676,6 +679,7 @@
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "DigitalTubeTool";
@@ -722,7 +726,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button confirm;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox savebox;
         private System.Windows.Forms.Label codevalue;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button button10;

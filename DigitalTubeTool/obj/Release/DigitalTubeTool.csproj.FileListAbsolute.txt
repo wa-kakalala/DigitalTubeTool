@@ -1,0 +1,11 @@
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\bin\Release\DigitalTubeTool.exe.config
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\bin\Release\DigitalTubeTool.exe
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\bin\Release\DigitalTubeTool.pdb
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\obj\Release\DigitalTubeTool.csproj.AssemblyReference.cache
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\obj\Release\DigitalTubeTool.csproj.SuggestedBindingRedirects.cache
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\obj\Release\DigitalTubeTool.Form1.resources
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\obj\Release\DigitalTubeTool.Properties.Resources.resources
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\obj\Release\DigitalTubeTool.csproj.GenerateResource.cache
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\obj\Release\DigitalTubeTool.csproj.CoreCompileInputs.cache
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\obj\Release\DigitalTubeTool.exe
+C:\Users\wkk\Desktop\Code\DigitalTubeTool\DigitalTubeTool\obj\Release\DigitalTubeTool.pdb
